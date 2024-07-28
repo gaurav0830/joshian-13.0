@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOSHIANA | 13.0</title>
+    <link rel="icon" type="image/x-icon" href="images/fav-icon.png">
+    <link rel="stylesheet" href="assests/css/reg.css" />
+    </head>
+    <body>
+    <section class="container-reg">
+      <h4>JOSHIANA <sup>13.0</sup></h4>
+      <header>Registration Form</header>
+      <form action="reg.html" method="post" class="form" id="myForm">
+        <div class="input-box">
+          <input type="text" placeholder="Enter College Address *" id="college" name="college"  />
+          <span id="nameError" class="error"></span>
+        </div>
+        <div class="input-box">
+            <input type="email" placeholder="Enter Email Address *" id="email" name="email"  />
+            <span id="emailError" class="error"></span>
+        </div>
+        <div class="input-box">
+            <input type="phone" placeholder="Enter  Phone Number *" id="phone" name="phone"  />
+            <span id="phoneError" class="error"></span>
+        </div>
+        <div class="input-box address">
+        <div class="column">
+          <div class="select-box">
+            <select name="department" id="department">
+              <option hidden>Department*</option>
+              <option value="mca">MCA</option>
+              <option value="msc(Cs&It)">MSC(CS & IT)</option>
+              <option value="M.tech(Cs)">M.TECH</option>
+              <option value="Bca">BCA</option>
+              <option value="Bsc(cs)">BSC(CS)</option>
+            </select>
+            <span id="departmentError" class="error"></span>
+          </div>
+          <div class="select-box">
+            <select name="event" id="options">
+              <option hidden>Select Event*</option>
+              <option value="astrohack">ASTROHACK[ Coding ]</option>
+              <option value="galactic webcraft">GALACTIC WEBCRAFT[ Web Design ]</option>
+              <option value="quantum query">QUANTUM QUERY[ IT Manager ]</option>
+              <option value="infognite">INFOGNITE[ IT Quiz ]</option>
+              <option value="futurewave">FUTUREWAVE[ Product Launch ]</option>
+              <option value="CLOAKED">CLOAKED[ Surprise Event ]</option>
+              <option value="OUTLAST">OUTLAST[ Team Event ]</option>
+              <option value="COSMIC BEAT">COSMIC BEAT[ Dance ]</option>
+              <option value="FRACTAL FORTUNE">FRACTAL FORTUNE[ Treasure Hunt ]</option>
+              <option value="STELLER STORIES">STELLER STORIES[ Reel Making ]</option>
+            </select>
+          </div>
+        </div>
+        </div>
+        <div class="column">
+            <div class="input-box">
+                <div id="inputFields"></div>
+            </div>
+        </div>
+        <input type="submit" class="button" value="Submit">
+      </form>
+    </section>
+    <script src="assests/js/reg.js"></script>
+  </body>
+</html>
