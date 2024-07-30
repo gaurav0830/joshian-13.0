@@ -5,10 +5,6 @@ const participantSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  phoneNumber: {
-    type: String,
-    required: true,
-  },
 });
 
 const regSchema = new mongoose.Schema({
@@ -22,6 +18,10 @@ const regSchema = new mongoose.Schema({
     unique: true,
   },
   eventType: {
+    type: String,
+    required: true,
+  },
+  phonenumber: {
     type: String,
     required: true,
   },

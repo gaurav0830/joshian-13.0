@@ -4,7 +4,6 @@ import Registration from "../models/registerModel.js"; // Adjust the path as nec
 
 const participantSchema = z.object({
   name: z.string().min(1),
-  phoneNumber: z.string().min(1).regex(/^\d+$/),
 });
 
 const registrationSchema = z.object({
@@ -12,6 +11,7 @@ const registrationSchema = z.object({
   email: z.string().email(),
   eventType: z.string().min(1),
   department: z.string().min(1),
+  phonenumber: z.string().min(1).regex(/^\d+$/),
   participants: z.array(participantSchema).nonempty(),
   transactionDetails: z.object({
     transactionId: z.string().min(1),
@@ -38,6 +38,7 @@ const userRegister = asyncHandler(async (req, res) => {
     email,
     eventType,
     department,
+    phonenumber,
     participants,
     transactionDetails,
   } = result.data;
@@ -56,6 +57,7 @@ const userRegister = asyncHandler(async (req, res) => {
     email,
     eventType,
     department,
+    phonenumber,
     participants,
     transactionDetails,
   });
